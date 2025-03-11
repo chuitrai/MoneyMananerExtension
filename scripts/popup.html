@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Money Manager</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <h1>Money Manager</h1>
+   <h2> Expense Tracker </h2>
+   <table> 
+      <tr>
+         <th>Category</th>
+         <th>(VND)</th>
+      </tr>
+      <tr>
+         <td>Income</td>
+         <td><input type="number" id="income" min="0"></td>
+      </tr>
+      <tr>
+         <td>Shopping</td>
+         <td><input type="number" id="shopping" min="0"></td>
+      </tr>
+      <tr>
+         <td>Transport</td>
+         <td><input type="number" id="transport" min="0"></td>
+      </tr>
+      <tr>
+         <td>Health</td>
+         <td><input type="number" id="health" min="0"></td>
+      </tr>
+      <tr>
+         <td>Entertainment</td>
+         <td><input type="number" id="entertainment" min="0"></td>
+      </tr>
+      <tr>
+         <td>Others</td>
+         <td><input type="number" id="others" min="0"></td>
+      </tr>
+      <tr>
+         <td>Total</td>
+         <td><input type="number" id="total" min="0" readonly></td>
+      </tr>
+   </table>
+   <button id="save">Save</button>
+   <button id="reset">Reset</button>
+   <script src="popup.js"></script>
+</body>
+</html>
