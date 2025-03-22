@@ -1,27 +1,35 @@
 /* Page custom */
+* {
+    font-family: 'Roboto Mono', cursive;
+}
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url("../assets/bg.jpg") ;
+    background-image: url("../assets/bg.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    height: 500px;
     width: 325px;
-    margin: 0;
 }
 
 h1 {
     color: white;
     text-align: center;
-    font-family: 'Pacifico', cursive;
-    
+    margin-bottom: 50px;
 }
 
 .login-container {
-    background-image: url("../assets/bg-container.jpg") ;
-    padding: 20px;
+    font-family: 'Roboto Mono', cursive;
+    background-image: url("../assets/bg.jpg") ;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
     border-radius: 20px;
     box-shadow: 0 0 20px white;
     display: flex;
@@ -29,59 +37,70 @@ h1 {
     width: 200px;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 h2 {
     color : white;
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 input[type="text"], input[type="password"] {
     width: 90%;
     height: 15%;
     padding: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     border-radius: 5px;
     border: none;
 }
 
 #login-button {
-    width: 100%;
-    height: inherit;
     color: white;
-    font-weight: bold;
-    background: linear-gradient(to right, #06B6D4, #3B82F6); /* from-cyan-500 to-blue-500 */
+    background: linear-gradient(to bottom right, #8B5CF6, #3B82F6); /* from-purple-600 to-blue-500 */
     border-radius: 0.5rem; /* rounded-lg */
     font-size: 0.875rem; /* text-sm */
     font-weight: 500; /* font-medium */
-    padding: 10px 10px; /* px-5 py-2.5 */
+    padding: 10px 20px; /* px-5 py-2.5 */
     text-align: center; /* text-center */
     margin-right: 0.5rem; /* me-2 */
-    margin-bottom: 0.5rem; /* mb-2 */
+    margin-bottom: 1rem; /* mb-2 */
     outline: none; /* focus:outline-none */
-    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border: none;
     cursor: pointer;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 #login-button:hover {
-    background: linear-gradient(to bottom left, #06B6D4, #3B82F6); /* hover:bg-gradient-to-bl */
+    background: linear-gradient(to bottom left, #8B5CF6, #3B82F6); /* hover:bg-gradient-to-bl */
 }
 
 #login-button:focus {
-    box-shadow: 0 0 0 4px rgba(103, 232, 249, 0.5); /* focus:ring-4 focus:ring-cyan-300 */
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); /* focus:ring-4 focus:ring-blue-300 */
 }
 
 .dark #login-button:focus {
-    box-shadow: 0 0 0 4px rgba(14, 116, 144, 0.5); /* dark:focus:ring-cyan-800 */
+    box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.5); /* dark:focus:ring-blue-800 */
+}
+
+p {
+    color: white;
+    font-size: 120%;
+    margin-top: 10px;
+}
+
+#signup-href {
+    display: inline-block;
+    color: rgb(164, 100, 216);
+    font-weight: bold;
+    font-size: 130%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 #signup-href:hover {
-    color: #06B6D4;
-    background-color: rgba(68, 57, 57, 0.5); /* Màu xám nhạt */
-    padding: 15px; /* Giúp hiệu ứng rõ ràng hơn */
-    border-radius: 10px; /* Làm tròn viền */
-    transition: background-color 0.75s ease-in-out;
+    background-color: rgba(240, 240, 240, 0.2); /* Giữ nền trong suốt */
+    border: 2px solid #936bdb;
 }
