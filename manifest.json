@@ -1,0 +1,12 @@
+{
+   "manifest_version": 3,
+   "name": "Chui's money manager",
+   "version": "1.0",
+   "description": "A simple project to manage my money",
+   "icons": {
+      "48": "./frontend/assets/icons.png"
+   },
+   "action": {
+      "default_popup": "./frontend/pages/login.html"
+   }
+}
